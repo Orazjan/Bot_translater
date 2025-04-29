@@ -1,12 +1,14 @@
 import asyncio
 
 from aiogram import Bot, Dispatcher
-import config
+from environs import Env
 import logging
 from app.handlers import router
 
+env = Env()
+env.read_env()
 
-bot = Bot(config.TOKEN)
+bot = Bot(token=env.str('TOKEN'))
 dp = Dispatcher()
 
 
