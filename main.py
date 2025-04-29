@@ -1,5 +1,5 @@
 import asyncio
-
+import os
 from aiogram import Bot, Dispatcher
 from environs import Env
 import logging
@@ -8,7 +8,7 @@ from app.handlers import router
 env = Env()
 env.read_env()
 
-bot = Bot(token=env.str('TOKEN'))
+bot = Bot(token=os.environ.get('TOKEN'))
 dp = Dispatcher()
 
 
