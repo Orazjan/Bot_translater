@@ -1,4 +1,3 @@
-import asyncio
 from googletrans import Translator
 
 
@@ -11,6 +10,5 @@ async def translate(text, src, dest):
     translator = Translator()
 
     translation = await translator.translate(text, src=src, dest=dest)
-    print(f"{translation.text}")
 
     return translation.text

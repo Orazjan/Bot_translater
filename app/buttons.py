@@ -19,6 +19,7 @@ keyboardForEng = InlineKeyboardMarkup(
                      [InlineKeyboardButton(
                          text='Кыргызский', callback_data='ky')]
                      ])
+
 keyboardForNotDetect = InlineKeyboardMarkup(
     inline_keyboard=[[InlineKeyboardButton(
         text='Кыргызский', callback_data='ky')],

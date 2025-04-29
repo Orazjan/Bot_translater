@@ -5,7 +5,7 @@ import app.buttons as st
 from Google_Translater import translate as tr
 from aiogram.fsm.context import FSMContext
 from aiogram.filters.state import State, StatesGroup
-from app.testspeech import transcribe_voice_bytes
+from app.speechtotext import transcribe_voice_bytes
 import io
 
 router = Router()
